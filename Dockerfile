@@ -21,8 +21,8 @@ COPY . .
 RUN ng build --configuration=production
 
 
-# Expose port 8006
-EXPOSE 8006
+# Expose port 5200
+EXPOSE 5200
 
 # Serve the Angular application using the built-in Angular CLI server
-CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "8006", "--disable-host-check"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "5200", "--disable-host-check"]
